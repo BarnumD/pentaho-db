@@ -9,7 +9,7 @@
 #  #Test
 #   docker run -d --name pentaho-db-test -v /docker/mounts/pentaho-db-test/var/lib/postgresql/data:/var/lib/postgresql/data -p 5432:5432 --memory 768M --memory-swap -1 --oom-kill-disable -c=512 pentaho-db:latest
 #  #Prod
-#   docker run -d --name pentaho-db-prod -d -v /docker/mounts/pentaho-db-prod/var/lib/postgresql/data:/var/lib/postgresql/data -p 5432:5432 --memory 1024M --memory-swap -1 --oom-kill-disable -c=1024 pentaho-db:0.56
+#   docker run -d --name pentaho-db-prod -v /docker/mounts/pentaho-db-prod/var/lib/postgresql/data:/var/lib/postgresql/data -p 5432:5432 --memory 1024M --memory-swap -1 --oom-kill-disable -c=1024 pentaho-db:0.56
 
 ##
 #Use postgres image from docker hub https://hub.docker.com/_/postgres/ #9.2 supported by pentaho.
